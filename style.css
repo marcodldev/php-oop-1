@@ -1,0 +1,34 @@
+img{
+
+    width: 200px ;
+}
+
+header img {
+    width: 50px ;
+}
+
+header {
+    background-image: url('./assets/movies/disco\ lights\ 1702.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.customCont {
+    width: 90%;
+    margin: auto;
+}
+
+.blueviolet {
+    background-color: blueviolet !important;
+    color: white;
+}
+
+.borderviolet {
+    border-color: blueviolet !important;
+}
+
+* {
+    font-size: small;
+    font-style: italic;
+    font-weight: 400;
+}

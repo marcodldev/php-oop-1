@@ -6,7 +6,7 @@ $movies = [
     new Movie("Omicidio all'italiana", "2017", "./assets/movies/locandina-ver.jpg", "https://www.youtube.com/watch?v=X0Fkb88W7jk"),
     new Movie("Italiano medio", "2015", "./assets/movies/locandina2-ver.jpg", "https://www.youtube.com/watch?v=-JQINuybHL4"),
     new Movie("L'uomo che usciva la gente", "2008", "./assets/movies/bruce.jpg", "https://www.youtube.com/watch?v=0_mk_me1oIU"),
-    new Movie("La Febbra", "2010", "./assets/movies/febbra.jpg", "https://www.youtube.com/watch?v=PE3T4watGmA&t=94s")
+    new Movie("La Febbra", "2010", "./assets/movies/febbra.jpg", "https://www.youtube.com/watch?v=PE3T4watGmA")
 ];
 $books = [
     new Book("Libro", "2020", "./assets/movies/book1.jpg", "https://www.amazon.it/Libro-Maccio-Capatonda/dp/8891828939/ref=sr_1_1?__mk_it_IT=ÅMÅŽÕÑ&crid=3PMMYGXT869VT&keywords=libro+maccio&qid=1671209338&s=books&sprefix=libro+maccio%2Cstripbooks%2C106&sr=1-1"),

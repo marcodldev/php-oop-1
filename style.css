@@ -8,9 +8,9 @@ header img {
 }
 
 header {
-    background-image: url('./assets/movies/disco\ lights\ 1702.jpg');
+    background-image: url('./assets/movies/lights.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
 }
 
 .customCont {
@@ -31,4 +31,23 @@ header {
     font-size: small;
     font-style: italic;
     font-weight: 400;
+}
+
+.minh {
+    min-height: 200px;
+}
+
+.posterw {
+    max-height: 228px;
+    min-height: 200px;
+}
+
+.absolute {
+    position: absolute;
+    bottom: 8px;
+    left: 36px;
+}
+
+.relative {
+    position: relative;
 }

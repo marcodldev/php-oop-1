@@ -5,11 +5,13 @@ include_once __DIR__ . './movie.php';
 $movies = [
     new Movie("Omicidio all'italiana", "2017", "./assets/movies/locandina-ver.jpg", "https://www.youtube.com/watch?v=X0Fkb88W7jk"),
     new Movie("Italiano medio", "2015", "./assets/movies/locandina2-ver.jpg", "https://www.youtube.com/watch?v=-JQINuybHL4"),
+    new Movie("L'uomo che usciva la gente", "2008", "./assets/movies/bruce.jpg", "https://www.youtube.com/watch?v=0_mk_me1oIU"),
+    new Movie("La Febbra", "2010", "./assets/movies/febbra.jpg", "https://www.youtube.com/watch?v=PE3T4watGmA&t=94s")
 ];
 $books = [
-    new Book("Libro","2020","./assets/movies/book1.jpg","https://www.amazon.it/Libro-Maccio-Capatonda/dp/8891828939/ref=sr_1_1?__mk_it_IT=ÅMÅŽÕÑ&crid=3PMMYGXT869VT&keywords=libro+maccio&qid=1671209338&s=books&sprefix=libro+maccio%2Cstripbooks%2C106&sr=1-1"),
-    new Book("Libro 2","2022","./assets/movies/book2.jpg","https://www.amazon.it/Libro-Maccio-Capatonda/dp/8891834106"),
-    ]
+    new Book("Libro", "2020", "./assets/movies/book1.jpg", "https://www.amazon.it/Libro-Maccio-Capatonda/dp/8891828939/ref=sr_1_1?__mk_it_IT=ÅMÅŽÕÑ&crid=3PMMYGXT869VT&keywords=libro+maccio&qid=1671209338&s=books&sprefix=libro+maccio%2Cstripbooks%2C106&sr=1-1"),
+    new Book("Libro 2", "2022", "./assets/movies/book2.jpg", "https://www.amazon.it/Libro-Maccio-Capatonda/dp/8891834106"),
+]
     // foreach ($movies as $elem) {
 //     echo ($elem->titolo);
 // }
@@ -48,35 +50,38 @@ $books = [
     <main>
         <h1 class="px-3">Film</h1>
         <div class="border-bottom borderviolet">
-            <div class="customCont d-flex my-2">
-                <div class="col-3 ">
+            <div class="container my-2">
+                <div class="row">
                     <?php foreach ($movies as $elem) { ?>
-                    <div class="card text-center" style="width: 13rem;">
-                        <img src="<?php echo ($elem->poster); ?>" class="card-img-top" alt="...">
-                        <div class="card-body p-1">
-                            <h5 class="card-title">
-                                <?php echo ($elem->titolo); ?>
-                            </h5>
-                            <p class="card-text">
-                                <?php echo ($elem->annoProduzione); ?>
-                            </p>
-                            <p class="card-text">
-                                <?php echo ($elem->annoCheck()); ?>
-                            </p>
-                            <a href="<?php echo ($elem->trailer); ?>" class="btn blueviolet">Vai al trailer!</a>
+                    <div class="col-2">
+                        <div class="card text-center " style="width: 13rem;">
+                            <img src="<?php echo ($elem->poster); ?>" class="card-img-top posterw" alt="...">
+                            <div class="card-body p-1 minh relative">
+                                <h5 class="card-title">
+                                    <?php echo ($elem->titolo); ?>
+                                </h5>
+                                <p class="card-text">
+                                    <?php echo ($elem->annoProduzione); ?>
+                                </p>
+                                <p class="card-text">
+                                    <?php echo ($elem->annoCheck()); ?>
+                                </p>
+                                <a href="<?php echo ($elem->trailer); ?>" class="btn blueviolet absolute">Vai al trailer!</a>
+                            </div>
                         </div>
                     </div>
+                    <?php } ?>
                 </div>
-                <?php } ?>
+
             </div>
         </div>
         <h1 class="px-3">Libri</h1>
         <div class="border-bottom borderviolet">
             <div class="customCont d-flex my-2">
-                <div class="col-3 ">
+                <div class="col-2">
                     <?php foreach ($books as $elem) { ?>
                     <div class="card text-center" style="width: 13rem;">
-                        <img src="<?php echo ($elem->poster); ?>" class="card-img-top" alt="...">
+                        <img src="<?php echo ($elem->poster); ?>" class="card-img-top posterw" alt="...">
                         <div class="card-body p-1">
                             <h5 class="card-title">
                                 <?php echo ($elem->titolo); ?>
@@ -91,7 +96,7 @@ $books = [
                 <?php } ?>
             </div>
         </div>
-        
+
 
     </main>
 

@@ -50,10 +50,10 @@ $books = [
     <main>
         <h1 class="px-3">Film</h1>
         <div class="border-bottom borderviolet">
-            <div class="container my-2">
+            <div class="container-fluid my-2">
                 <div class="row">
                     <?php foreach ($movies as $elem) { ?>
-                    <div class="col col-xl-2">
+                    <div class="col col-md-3 col-lg-2">
                         <div class="card text-center " style="width: 13rem;">
                             <img src="<?php echo ($elem->poster); ?>" class="card-img-top posterw" alt="...">
                             <div class="card-body p-1 minh relative">
@@ -77,8 +77,8 @@ $books = [
         </div>
         <h1 class="px-3">Libri</h1>
         <div class="border-bottom borderviolet">
-            <div class="customCont d-flex my-2">
-                <div class="col col-xl-2">
+            <div class="container-fluid d-flex my-2">
+                <div class="col col-md-3 col-lg-2">
                     <?php foreach ($books as $elem) { ?>
                     <div class="card text-center" style="width: 13rem;">
                         <img src="<?php echo ($elem->poster); ?>" class="card-img-top posterw" alt="...">
